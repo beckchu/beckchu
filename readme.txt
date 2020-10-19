@@ -3,4 +3,4 @@
 3、mudo学习的重点：base文件夹的实现方式，有利于提高自己对象编程的能力；对象池的实现，有助于帮助理解多线程编程对象的声明周期；
 mudo库的实现有助于理解io多路复用，这个只是库，并不是reactor模型；
 4、总结网络编程的面试题；什么是短连接（链接->数据->关掉链接），什么是长链接（链接->send data->保持链接->send data->...->关掉链接）；
-5、socket编程为什么上层一定要有inputbuffer and outputbuffer
+5、socket编程为什么上层一定要有inputbuffer and outputbuffer，看起来buffer越大，约划算，但是buffer大时，链接变多就会浪费系统资源，可以参照mudo的函数栈空间解决；
